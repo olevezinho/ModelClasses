@@ -6,9 +6,13 @@
 
     public class Calculator
     {
-        public int Add(int n1, int n2)
+        public int Add(int? n1, int? n2)
         {
-            return n1 + n2;
+            if (!n1.HasValue || !n2.HasValue)
+            {
+                throw new ArgumentNullException();
+            }
+            return n1.Value + n2.Value;
         }
     }
 }

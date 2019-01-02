@@ -4,9 +4,10 @@
     using ModelClasses;
     using Moq;
 
+    [TestClass]
     public class Mock
     {
-        [DataTestMethod]
+        [TestMethod]
         [DataRow(1, 2, 3)]
         [DataRow(1, 1, 2)]
         public void ShouldReplaceValues(int a, int b, int sum)

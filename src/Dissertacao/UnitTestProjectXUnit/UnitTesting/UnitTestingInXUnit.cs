@@ -1,6 +1,7 @@
 ﻿namespace UnitTestProjectXUnit
 {
     using ModelClasses;
+    using System;
     using Xunit;
 
     public class UnitTestingInXUnit
@@ -14,6 +15,17 @@
             var sut = new Calculator(); //Arrange
             var result = sut.Add(n1, n2); //Act
             Assert.Equal(sum, result); //Assert
+        }
+
+        [Theory]
+        [InlineData(null, 1)]
+        [InlineData(1, null)]
+        public void ShouldNotAddNULL(int? n1, int? n2)
+        {
+            //Arrange
+            var sut = new Calculator();
+            //Assert                                   Act 
+            Assert.Throws<ArgumentNullException>(() => sut.Add(n1, n2));
         }
     }
 }

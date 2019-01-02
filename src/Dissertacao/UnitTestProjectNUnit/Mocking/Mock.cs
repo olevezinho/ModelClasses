@@ -20,8 +20,7 @@
 
             //Assert
             var result = sut.Add(a,b);
-            Assert.AreEqual(sum, result);
-            
+            Assert.AreEqual(sum, result);           
         }
     }
 }

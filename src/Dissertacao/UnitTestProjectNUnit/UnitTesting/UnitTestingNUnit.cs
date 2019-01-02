@@ -3,9 +3,7 @@
     using ModelClasses;
     using NUnit.Framework;
     using System;
-    using System.Collections.Generic;
-    using System.Text;
-    
+
     public class UnitTestingNUnit
     {
         [Test]
@@ -17,6 +15,17 @@
             var sut = new Calculator(); //Arrange
             var result = sut.Add(n1,n2); //Act
             Assert.AreEqual(sum, result); //Assert
+        }
+
+        [Test]
+        [TestCase(null, 1)]
+        [TestCase(1 ,null)]
+        public void ShouldNotAddNULL(int? n1, int? n2)
+        {
+            //Arrange
+            var sut = new Calculator();
+            //Assert
+            Assert.Throws<ArgumentNullException>(() => sut.Add(n1, n2));
         }
     }
 }
