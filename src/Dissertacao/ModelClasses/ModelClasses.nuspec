@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Filipe</authors>
+    <owners>Filipe</owners>
+    <licenseUrl>http://sometext</licenseUrl>
+    <projectUrl>http://sometext</projectUrl>
+    <iconUrl>http://usc.utad.pt/wp-content/uploads/2018/09/cropped-cropped-cropped-usc_logo_site-2.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Some description</description>
+    <releaseNotes>Some release notes</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>Red Blue</tags>
+  </metadata>
+</package>
