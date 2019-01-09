@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectMSTest", "UnitTestProjectMSTest\UnitTestProjectMSTest.csproj", "{E39742BE-BF8E-4C55-95A7-C9937DCB0738}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectMSTest.Tests", "UnitTestProjectMSTest\UnitTestProjectMSTest.Tests.csproj", "{E39742BE-BF8E-4C55-95A7-C9937DCB0738}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectXUnit", "UnitTestProjectXUnit\UnitTestProjectXUnit.csproj", "{C4FC4D7A-DDE0-4E56-A684-BDE9F28F0A05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectXUnit.Tests", "UnitTestProjectXUnit\UnitTestProjectXUnit.Tests.csproj", "{C4FC4D7A-DDE0-4E56-A684-BDE9F28F0A05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectNUnit", "UnitTestProjectNUnit\UnitTestProjectNUnit.csproj", "{07961C95-2163-49C8-9B3E-8EA150CCB37C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectNUnit.Tests", "UnitTestProjectNUnit\UnitTestProjectNUnit.Tests.csproj", "{07961C95-2163-49C8-9B3E-8EA150CCB37C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelClasses", "ModelClasses\ModelClasses.csproj", "{DEAE9559-73CB-4AC8-9584-CD930AB2759B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelClasses", "ModelClasses\ModelClasses.csproj", "{DEAE9559-73CB-4AC8-9584-CD930AB2759B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ModelAndUnitTesting", "ModelAndUnitTesting", "{194D8AC1-F0D4-44B3-A83B-A06C40E77EC9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceAndIntegrationTesting", "ServiceAndIntegrationTesting", "{D81F0898-5980-4353-B477-9B90F0D5C255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceCalculator", "ServiceCalculator\ServiceCalculator.csproj", "{9BD3548E-2C53-49C4-9137-00E2ED1066F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceCalculator", "ServiceCalculator\ServiceCalculator.csproj", "{9BD3548E-2C53-49C4-9137-00E2ED1066F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{A35FB101-53E1-4EB0-B62C-B6118B0CB5BF}"
 EndProject
