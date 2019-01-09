@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>modelclasses</id>
+    <id>ModelClasses</id>
     <version>$version$</version>
-    <title>$title$</title>
+    <title>Calculator</title>
     <authors>Filipe</authors>
     <owners>Filipe</owners>
     <licenseUrl>http://usc.utad.pt</licenseUrl>
     <projectUrl>http://usc.utad.pt</projectUrl>
-    <iconUrl>D:\Filipe\Yugoup\Dissertação\Imagem\settings.png</iconUrl>
+    <iconUrl>http://usc.utad.pt/wp-content/uploads/2018/09/cropped-cropped-cropped-usc_logo_site-2.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Random Discription</description>
-    <releaseNotes>Random Discription</releaseNotes>
+    <description>some description</description>
+    <releaseNotes>test project</releaseNotes>
     <copyright>Copyright 2019</copyright>
-    <tags>usc utad</tags>
+    <tags>dotnet nuget usc</tags>
   </metadata>
 </package>
