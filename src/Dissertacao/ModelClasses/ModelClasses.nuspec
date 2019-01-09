@@ -6,13 +6,13 @@
     <title>$title$</title>
     <authors>Filipe</authors>
     <owners>Filipe</owners>
-    <licenseUrl>http://sometext</licenseUrl>
-    <projectUrl>http://sometext</projectUrl>
-    <iconUrl>http://usc.utad.pt/wp-content/uploads/2018/09/cropped-cropped-cropped-usc_logo_site-2.png</iconUrl>
+    <licenseUrl>http://usc.utad.pt</licenseUrl>
+    <projectUrl>http://usc.utad.pt</projectUrl>
+    <iconUrl>D:\Filipe\Yugoup\Dissertação\Imagem\settings.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Some description</description>
-    <releaseNotes>Some release notes</releaseNotes>
+    <description>Random Discription</description>
+    <releaseNotes>Random Discription</releaseNotes>
     <copyright>Copyright 2019</copyright>
-    <tags>Red Blue</tags>
+    <tags>usc utad</tags>
   </metadata>
 </package>
