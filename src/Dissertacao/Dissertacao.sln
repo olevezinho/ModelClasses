@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceCalculator", "Servic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{A35FB101-53E1-4EB0-B62C-B6118B0CB5BF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelClasses", "ModelClasses\ModelClasses.csproj", "{A399E2B4-CB6D-475A-A407-48DADA3BFD80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9BD3548E-2C53-49C4-9137-00E2ED1066F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BD3548E-2C53-49C4-9137-00E2ED1066F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BD3548E-2C53-49C4-9137-00E2ED1066F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A399E2B4-CB6D-475A-A407-48DADA3BFD80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A399E2B4-CB6D-475A-A407-48DADA3BFD80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A399E2B4-CB6D-475A-A407-48DADA3BFD80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A399E2B4-CB6D-475A-A407-48DADA3BFD80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{07961C95-2163-49C8-9B3E-8EA150CCB37C} = {194D8AC1-F0D4-44B3-A83B-A06C40E77EC9}
 		{9BD3548E-2C53-49C4-9137-00E2ED1066F3} = {A35FB101-53E1-4EB0-B62C-B6118B0CB5BF}
 		{A35FB101-53E1-4EB0-B62C-B6118B0CB5BF} = {D81F0898-5980-4353-B477-9B90F0D5C255}
+		{A399E2B4-CB6D-475A-A407-48DADA3BFD80} = {194D8AC1-F0D4-44B3-A83B-A06C40E77EC9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {889CC129-B5AF-4A29-801E-80233884DC4A}
