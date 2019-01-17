@@ -1,8 +1,8 @@
 ﻿namespace UnitTestProjectNUnit.Mocking
 {
-    using ModelClasses;
     using NUnit.Framework;
     using Moq;
+    using ModelClasses;
 
     public class Mock
     {
