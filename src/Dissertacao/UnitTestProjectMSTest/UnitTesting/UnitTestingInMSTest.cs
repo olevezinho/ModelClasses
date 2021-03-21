@@ -7,11 +7,10 @@
     [TestClass]
     public class UnitTestingInMSTest
     {
-        [TestMethod]
+        [DataTestMethod]
         [DataRow(3, 2, 5)]
         [DataRow(1, 1, 2)]
         [DataRow(2, 0, 2)]
-        //[DataRow(int.MaxValue, 0, 2)]
         public void shouldReturnASum(int n1, int n2, int sum)
         {
             var sut = new Calculator(); //Arrange
@@ -19,25 +18,93 @@
             Assert.AreEqual(sum, result); //Assert
         }
         
-        [TestMethod]
+        [DataTestMethod]
         [DataRow(null,1)]
         [DataRow(1, null)]
         public void ShouldNotAddNULL(int? n1, int? n2)
         {
             //Arrange
             var sut = new Calculator();
-            Exception exception = null;
-            //Act
-            try
-            {
-                int sum = sut.Add(n1,n2);
-            }
-            catch (Exception ex)
-            {
-                exception = ex;
-            }
             //Assert
-            Assert.IsNotNull(exception);
+            Assert.ThrowsException<ArgumentNullException>(() => sut.Subtract(n1, n2));
+        }
+
+        [DataTestMethod]
+        [DataRow(3, 1, 2)]
+        [DataRow(2, 1, 1)]
+        public void ShouldReturnASubtraction(int n1, int n2, int sub)
+        {
+            var sut = new Calculator(); //Arrange
+            var result = sut.Subtract(n1, n2); //Act
+            Assert.AreEqual(sub, result); //Assert
+        }
+
+        [DataTestMethod]
+        [DataRow(null, 1)]
+        [DataRow(1, null)]
+        public void ShouldNotSubtractNULL(int? n1, int? n2)
+        {
+            //Arrange
+            var sut = new Calculator();
+            //Assert
+            Assert.ThrowsException<ArgumentNullException>(() => sut.Subtract(n1, n2));
+        }
+
+        [DataTestMethod]
+        [DataRow(3, 1, 3)]
+        [DataRow(2, 3, 6)]
+        public void ShouldReturnAMultiplication(int n1, int n2, int mul)
+        {
+            var sut = new Calculator(); //Arrange
+            var result = sut.Multiply(n1, n2); //Act
+            Assert.AreEqual(mul, result); //Assert
+        }
+
+        [DataTestMethod]
+        [DataRow(null, 1)]
+        [DataRow(1, null)]
+        public void ShouldNotMultiplyNULL(int? n1, int? n2)
+        {
+            //Arrange
+            var sut = new Calculator();
+            //Assert
+            Assert.ThrowsException<ArgumentNullException>(() => sut.Multiply(n1, n2));
+        }
+
+        [DataTestMethod]
+        [DataRow(3, 1, 3)]
+        [DataRow(3, 3, 1)]
+        public void ShouldReturnADivision(int n1, int n2, int div)
+        {
+            var sut = new Calculator(); //Arrange
+            var result = sut.Divide(n1, n2); //Act
+            Assert.AreEqual(div, result); //Assert
+        }
+
+        [DataTestMethod]
+        [DataRow(null, 1)]
+        [DataRow(1, null)]
+        public void ShouldNotDivideNULL(int? n1, int? n2)
+        {
+            //Arrange
+            var sut = new Calculator();
+            //Assert
+            Assert.ThrowsException<ArgumentNullException>(() => sut.Divide(n1, n2));
+        }
+
+        [DataTestMethod]
+        [DataRow(null, 0)]
+        [DataRow(1, 0)]
+        public void ShouldNotDivideByZero(int? n1, int? n2)
+        {
+            //Arrange
+            var sut = new Calculator();
+            if (n1 == null)
+                //Assert                                   Act 
+                Assert.ThrowsException<ArgumentNullException>(() => sut.Divide(n1, n2));
+            else
+                //Assert                                   Act 
+                Assert.ThrowsException<DivideByZeroException>(() => sut.Divide(n1, n2));
         }
     }
 }

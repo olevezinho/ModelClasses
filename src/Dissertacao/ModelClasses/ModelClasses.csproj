@@ -1,19 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!--https://api.nuget.org/v3/index.json-->
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageIconUrl>http://usc.utad.pt/wp-content/uploads/2018/09/cropped-cropped-cropped-usc_logo_site-2.png</PackageIconUrl>
-    <Version>1.0.3.4</Version>
-    <AssemblyVersion>1.0.3.4</AssemblyVersion>
-    <FileVersion>1.0.3.4</FileVersion>
+    <Version>1.0.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
     <Description>Small package containing an addition method</Description>
     <PackageTags>Add</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.7" />
     <PackageReference Include="Semver" Version="2.0.4" />
   </ItemGroup>
 
