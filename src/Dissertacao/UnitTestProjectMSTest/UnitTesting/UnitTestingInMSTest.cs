@@ -74,7 +74,8 @@
         [DataTestMethod]
         [DataRow(3, 1, 3)]
         [DataRow(3, 3, 1)]
-        public void ShouldReturnADivision(int n1, int n2, int div)
+        [DataRow(3.0, 2.0, 1.5)]
+        public void ShouldReturnADivision(double n1, double n2, double div)
         {
             var sut = new Calculator(); //Arrange
             var result = sut.Divide(n1, n2); //Act

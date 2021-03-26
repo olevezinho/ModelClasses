@@ -21,7 +21,7 @@
             CheckForNull(n1, n2);
             return n1.Value * n2.Value;
         }
-        public int Divide(int? n1, int? n2)
+        public double Divide(double? n1, double? n2)
         {
             CheckForNull(n1, n2);
             CheckDivisionZero(n2);
@@ -32,7 +32,12 @@
             if (!n1.HasValue || !n2.HasValue)
                 throw new ArgumentNullException();
         }
-        private static void CheckDivisionZero(int? n2)
+        private static void CheckForNull(double? n1, double? n2)
+        {
+            if (!n1.HasValue || !n2.HasValue)
+                throw new ArgumentNullException();
+        }
+        private static void CheckDivisionZero(double? n2)
         {
             if (n2.Value == 0)
                 throw new DivideByZeroException();
