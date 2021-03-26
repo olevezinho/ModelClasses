@@ -74,6 +74,7 @@
         [TestCase(3, 1, 3)]
         [TestCase(3, 3, 1)]
         [TestCase(2.0, 4.0, 0.5)]
+        [TestCase(2, 4, 0.5)]
         public void ShouldReturnADivision(double n1, double n2, double div)
         {
             var sut = new Calculator(); //Arrange
