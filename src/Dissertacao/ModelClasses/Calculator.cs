@@ -6,22 +6,22 @@
     {
         public int? N1 { get; set; }
         public int? N2 { get; set; }
-        public static int Add(int? N1, int? N2)
+        public int Add(int? N1, int? N2)
         {
             CheckForNull(N1, N2);
             return N1.Value + N2.Value;
         }
-        public static int Subtract(int? N1, int? N2)
+        public int Subtract(int? N1, int? N2)
         {
             CheckForNull(N1, N2);
             return N1.Value - N2.Value;
         }
-        public static int Multiply(int? N1, int? N2)
+        public int Multiply(int? N1, int? N2)
         {
             CheckForNull(N1, N2);
             return N1.Value * N2.Value;
         }
-        public static double Divide(double? N1, double? N2)
+        public double Divide(double? N1, double? N2)
         {
             CheckForNull(N1, N2);
             CheckDivisionZero(N2);
