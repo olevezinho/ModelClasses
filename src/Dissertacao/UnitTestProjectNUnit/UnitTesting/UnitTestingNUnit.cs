@@ -13,7 +13,7 @@
         public void ShouldReturnASum(int n1, int n2, int sum)
         {
             var sut = new Calculator(); //Arrange
-            var result = sut.Add(n1,n2); //Act
+            var result = Calculator.Add(n1,n2); //Act
             Assert.That(sum, Is.EqualTo(result)); //Assert
         }
 
@@ -25,7 +25,7 @@
             //Arrange
             var sut = new Calculator();
             //Assert
-            Assert.Throws<ArgumentNullException>(() => sut.Add(n1, n2));
+            Assert.Throws<ArgumentNullException>(() => Calculator.Add(n1, n2));
         }
 
         [Test]
@@ -34,7 +34,7 @@
         public void ShouldReturnASubtraction(int n1, int n2, int sub)
         {
             var sut = new Calculator(); //Arrange
-            var result = sut.Subtract(n1, n2); //Act
+            var result = Calculator.Subtract(n1, n2); //Act
             Assert.That(sub, Is.EqualTo(result)); //Assert
         }
 
@@ -46,7 +46,7 @@
             //Arrange
             var sut = new Calculator();
             //Assert
-            Assert.Throws<ArgumentNullException>(() => sut.Subtract(n1, n2));
+            Assert.Throws<ArgumentNullException>(() => Calculator.Subtract(n1, n2));
         }
 
         [Test]
@@ -55,7 +55,7 @@
         public void ShouldReturnAMultiplication(int n1, int n2, int mul)
         {
             var sut = new Calculator(); //Arrange
-            var result = sut.Multiply(n1, n2); //Act
+            var result = Calculator.Multiply(n1, n2); //Act
             Assert.That(mul, Is.EqualTo(result)); //Assert
         }
 
@@ -67,7 +67,7 @@
             //Arrange
             var sut = new Calculator();
             //Assert
-            Assert.Throws<ArgumentNullException>(() => sut.Multiply(n1, n2));
+            Assert.Throws<ArgumentNullException>(() => Calculator.Multiply(n1, n2));
         }
 
         [Test]
@@ -78,7 +78,7 @@
         public void ShouldReturnADivision(double n1, double n2, double div)
         {
             var sut = new Calculator(); //Arrange
-            var result = sut.Divide(n1, n2); //Act
+            var result = Calculator.Divide(n1, n2); //Act
             Assert.That(div, Is.EqualTo(result)); //Assert
         }
 
@@ -90,7 +90,7 @@
             //Arrange
             var sut = new Calculator();
             //Assert
-            Assert.Throws<ArgumentNullException>(() => sut.Divide(n1, n2));
+            Assert.Throws<ArgumentNullException>(() => Calculator.Divide(n1, n2));
         }
 
         [Test]
@@ -102,10 +102,10 @@
             var sut = new Calculator();
             if (n1 == null)
                 //Assert                                   Act 
-                Assert.Throws<ArgumentNullException>(() => sut.Divide(n1, n2));
+                Assert.Throws<ArgumentNullException>(() => Calculator.Divide(n1, n2));
             else
                 //Assert                                   Act 
-                Assert.Throws<DivideByZeroException>(() => sut.Divide(n1, n2));
+                Assert.Throws<DivideByZeroException>(() => Calculator.Divide(n1, n2));
         }
     }
 }

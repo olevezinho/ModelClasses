@@ -14,7 +14,7 @@
         public void ShouldReturnASum(int n1, int n2, int sum)
         {
             var sut = new Calculator(); //Arrange
-            var result = sut.Add(n1,n2); //Act
+            var result = Calculator.Add(n1,n2); //Act
             Assert.AreEqual(sum, result); //Assert
         }
         
@@ -26,7 +26,7 @@
             //Arrange
             var sut = new Calculator();
             //Assert
-            Assert.ThrowsException<ArgumentNullException>(() => sut.Subtract(n1, n2));
+            Assert.ThrowsException<ArgumentNullException>(() => Calculator.Subtract(n1, n2));
         }
 
         [DataTestMethod]
@@ -35,7 +35,7 @@
         public void ShouldReturnASubtraction(int n1, int n2, int sub)
         {
             var sut = new Calculator(); //Arrange
-            var result = sut.Subtract(n1, n2); //Act
+            var result = Calculator.Subtract(n1, n2); //Act
             Assert.AreEqual(sub, result); //Assert
         }
 
@@ -47,7 +47,7 @@
             //Arrange
             var sut = new Calculator();
             //Assert
-            Assert.ThrowsException<ArgumentNullException>(() => sut.Subtract(n1, n2));
+            Assert.ThrowsException<ArgumentNullException>(() => Calculator.Subtract(n1, n2));
         }
 
         [DataTestMethod]
@@ -56,7 +56,7 @@
         public void ShouldReturnAMultiplication(int n1, int n2, int mul)
         {
             var sut = new Calculator(); //Arrange
-            var result = sut.Multiply(n1, n2); //Act
+            var result = Calculator.Multiply(n1, n2); //Act
             Assert.AreEqual(mul, result); //Assert
         }
 
@@ -68,7 +68,7 @@
             //Arrange
             var sut = new Calculator();
             //Assert
-            Assert.ThrowsException<ArgumentNullException>(() => sut.Multiply(n1, n2));
+            Assert.ThrowsException<ArgumentNullException>(() => Calculator.Multiply(n1, n2));
         }
 
         [DataTestMethod]
@@ -78,7 +78,7 @@
         public void ShouldReturnADivision(double n1, double n2, double div)
         {
             var sut = new Calculator(); //Arrange
-            var result = sut.Divide(n1, n2); //Act
+            var result = Calculator.Divide(n1, n2); //Act
             Assert.AreEqual(div, result); //Assert
         }
 
@@ -90,7 +90,7 @@
             //Arrange
             var sut = new Calculator();
             //Assert
-            Assert.ThrowsException<ArgumentNullException>(() => sut.Divide(n1, n2));
+            Assert.ThrowsException<ArgumentNullException>(() => Calculator.Divide(n1, n2));
         }
 
         [DataTestMethod]
@@ -102,10 +102,10 @@
             var sut = new Calculator();
             if (n1 == null)
                 //Assert                                   Act 
-                Assert.ThrowsException<ArgumentNullException>(() => sut.Divide(n1, n2));
+                Assert.ThrowsException<ArgumentNullException>(() => Calculator.Divide(n1, n2));
             else
                 //Assert                                   Act 
-                Assert.ThrowsException<DivideByZeroException>(() => sut.Divide(n1, n2));
+                Assert.ThrowsException<DivideByZeroException>(() => Calculator.Divide(n1, n2));
         }
     }
 }
