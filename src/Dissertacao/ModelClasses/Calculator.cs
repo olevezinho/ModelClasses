@@ -1,59 +1,50 @@
-﻿namespace ModelClasses
+namespace ModelClasses
 {
     using System;
 
     public class Calculator
     {
-        public int? N1 { get; set; }
-        public int? N2 { get; set; }
-
-        public static int Add(int? N1, int? N2)
+        public int Add(int? n1, int? n2)
         {
-            CheckForNull(N1, N2);
-            return N1.Value + N2.Value;
+            CheckForNull(n1, n2);
+            return n1.Value + n2.Value;
         }
 
-        public static int Subtract(int? N1, int? N2)
+        public int Subtract(int? n1, int? n2)
         {
-            CheckForNull(N1, N2);
-            return N1.Value - N2.Value;
+            CheckForNull(n1, n2);
+            return n1.Value - n2.Value;
         }
 
-        public static int Multiply(int? N1, int? N2)
+        public int Multiply(int? n1, int? n2)
         {
-            CheckForNull(N1, N2);
-            return N1.Value * N2.Value;
+            CheckForNull(n1, n2);
+            return n1.Value * n2.Value;
         }
 
-        public static double Divide(double? N1, double? N2)
+        public double Divide(double? n1, double? n2)
         {
-            CheckForNull(N1, N2);
-            CheckDivisionZero(N2);
-            return N1.Value / N2.Value;
+            CheckForNull(n1, n2);
+            CheckDivisionZero(n2);
+            return n1.Value / n2.Value;
         }
 
-        private static void CheckForNull(int? N1, int? N2)
+        private static void CheckForNull(int? n1, int? n2)
         {
-            if (!N1.HasValue)
-                throw new ArgumentNullException(nameof(N1));
-
-            if (!N2.HasValue)
-                throw new ArgumentNullException(nameof(N2));
+            if (!n1.HasValue || !n2.HasValue)
+                throw new ArgumentNullException();
         }
 
-        private static void CheckForNull(double? N1, double? N2)
+        private static void CheckForNull(double? n1, double? n2)
         {
-            if (!N1.HasValue)
-                throw new ArgumentNullException(nameof(N1));
-
-            if (!N2.HasValue)
-                throw new ArgumentNullException(nameof(N2));
+            if (!n1.HasValue || !n2.HasValue)
+                throw new ArgumentNullException();
         }
 
-        private static void CheckDivisionZero(double? N2)
+        private static void CheckDivisionZero(double? n2)
         {
-            if (N2.Value == 0)
-                throw new DivideByZeroException(nameof(N2));
+            if (n2.Value == 0)
+                throw new DivideByZeroException();
         }
     }
 }
