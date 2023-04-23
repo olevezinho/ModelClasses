@@ -2,27 +2,27 @@ namespace ModelClasses
 {
     using System;
 
-    public class Calculator
+    public static class Calculator
     {
-        public int Add(int? n1, int? n2)
+        public static int Add(int? n1, int? n2)
         {
             CheckForNull(n1, n2);
             return n1.Value + n2.Value;
         }
 
-        public int Subtract(int? n1, int? n2)
+        public static int Subtract(int? n1, int? n2)
         {
             CheckForNull(n1, n2);
             return n1.Value - n2.Value;
         }
 
-        public int Multiply(int? n1, int? n2)
+        public static int Multiply(int? n1, int? n2)
         {
             CheckForNull(n1, n2);
             return n1.Value * n2.Value;
         }
 
-        public double Divide(double? n1, double? n2)
+        public static double Divide(double? n1, double? n2)
         {
             CheckForNull(n1, n2);
             CheckDivisionZero(n2);
@@ -40,7 +40,7 @@ namespace ModelClasses
             if (!n1.HasValue || !n2.HasValue)
                 throw new ArgumentNullException();
         }
-
+        
         private static void CheckDivisionZero(double? n2)
         {
             if (n2.Value == 0)
